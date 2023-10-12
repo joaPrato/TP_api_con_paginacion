@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "b88202e3-de3b-4799-b5a3-c9533e9c3d0b",
+		"name": "api_con_paginacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29770412"
+	},
+	"item": [
+		{
+			"name": "buscarPorLocalidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-conpag-service.onrender.com/api/v1/personas/buscarPorLocalidad?localidad=Guaymallen",
+					"protocol": "https",
+					"host": [
+						"api-conpag-service",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"buscarPorLocalidad"
+					],
+					"query": [
+						{
+							"key": "localidad",
+							"value": "Guaymallen"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarLibrosDe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-conpag-service.onrender.com/api/v1/personas/buscarLibrosDe?id_persona=42750526",
+					"protocol": "https",
+					"host": [
+						"api-conpag-service",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"buscarLibrosDe"
+					],
+					"query": [
+						{
+							"key": "id_persona",
+							"value": "42750526"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarPorNombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-conpag-service.onrender.com/api/v1/personas/buscarPorNombre?filtro=Joaquin",
+					"protocol": "https",
+					"host": [
+						"api-conpag-service",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"buscarPorNombre"
+					],
+					"query": [
+						{
+							"key": "filtro",
+							"value": "Joaquin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarLibrosDePaginado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-conpag-service.onrender.com/api/v1/personas/buscarLibrosDePaginado?page=0&size=2&id_persona=42750526",
+					"protocol": "https",
+					"host": [
+						"api-conpag-service",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"buscarLibrosDePaginado"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "sort",
+							"value": "id,desc",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "id_persona",
+							"value": "42750526"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
